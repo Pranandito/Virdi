@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,31 +13,31 @@
 
 </head>
 
-<body>
-    <div class="h-screen mb-4 bg-[url(/background-hero.jpg)] bg-cover bg-center text-white">
+<body class="bg-[#FFFFF0]">
+    <section id="Beranda" class="h-screen bg-[url(/background-hero.jpg)] bg-cover bg-center bg-fixed text-white">
         <header class="flex justify-between items-center mx-20 pt-6">
             <div class="flex items-center gap-5">
                 <img src="/Logo-White.png" alt="" class="w-10 h-10">
                 <h1>Virdi</h1>
             </div>
-            <nav class="px-8 py-2 bg-gray-300 bg-opacity-30 rounded-3xl backdrop-blur">
+            <nav class="px-8 py-2 bg-gray-300 bg-opacity-30 rounded-3xl backdrop-blur hidden lg:block">
                 <ul class="flex gap-10">
                     <li>
-                        <a href="">Beranda</a>
+                        <a href="#Beranda">Beranda</a>
                     </li>
                     <li>
-                        <a href="">Layanan</a>
+                        <a href="#Layanan">Layanan</a>
                     </li>
                     <li>
-                        <a href="">Katalog</a>
+                        <a href="#Katalog">Katalog</a>
                     </li>
                     <li>
-                        <a href="">kontak</a>
+                        <a href="#Footer">kontak</a>
                     </li>
                 </ul>
             </nav>
             <div class="flex items-center gap-5">
-                <a href="">Sign in</a>
+                <a href="" class="hidden lg:block">Sign in</a>
                 <a href="" class="px-4 py-1 bg-gray-300 bg-opacity-30 rounded-3xl backdrop-blur flex items-center">
                     Sign up
                     <div
@@ -45,13 +45,17 @@
                         <i class="bi bi-arrow-up-right"></i>
                     </div>
                 </a>
+                <div
+                    class="lg:hidden ml-1 text-md text-white h-9 w-9 bg-[#80CC94] rounded-full flex justify-center items-center">
+                    <i class="bi bi-list"></i>
+                </div>
             </div>
         </header>
-        <div class="ml-20 mt-40">
+        <div class="ml-20 mt-28">
             <h1 class="text-5xl">Menanam Inovasi <br> Memanen Solusi.</h1>
             <h1 class="mt-2">Menuju Agrikultur 4.0</h1>
-            <a href=""
-                class="px-4 py-1 mt-2 border-white border-2 bg-opacity-0 bg-gray-300  rounded-3xl inline-flex items-center mask-clip-padding hover:backdrop-blur hover:bg-opacity-30">
+            <a href="#Layanan"
+                class="px-4 py-1 mt-2 border-white border bg-opacity-0 bg-gray-300  rounded-3xl inline-flex items-center mask-clip-padding hover:backdrop-blur hover:bg-opacity-30">
                 Layanan Kami
                 <div
                     class="ml-3 text-[11px] text-white h-5 w-5 bg-[#80CC94] rounded-full flex justify-center items-center">
@@ -59,7 +63,66 @@
                 </div>
             </a>
         </div>
-    </div>
+    </section>
+    <section id="Layanan" class="mx-16">
+        <div class="lg:flex items-center justify-between py-16">
+            <div class="w-[400px] h-[225px]">
+                <div class="flex items-center text-2xl gap-3 mb-3">
+                    <img src="/pie-chart.png" alt="" class="h-[50px] w-[50px]">
+                    <h1 class="px-3 py-1 border-2 rounded-full border-[#507C5C]">Sektor Unggulan</h1>
+                </div>
+                <p>Virdi hadir sebagai mitra teknologi bagi <br> petani dan peternak di Indonesia, <br> untuk mendukung
+                    modernisasi, <br> efisiensi, dan keberlanjutan di <br> berbagai lini usaha
+                    agrikultur.</p>
+            </div>
+            <h1 class="max-w-[815px] max-h-[300px] text-4xl lg:text-6xl">Inovasi teknologi cerdas untuk pertanian,
+                perikanan, <span class="text-gray-400">dan</span>
+                peternakan
+                yang
+                lebih efisien, mandiri, <span class="text-gray-400">dan</span>
+                berkelanjutan.</h1>
+        </div>
+        <div class="px4 grid grid-cols-1 lg:grid-cols-3 gap-6 font-semibold">
+            <div class="h-[550px] bg-[url(/Pertanian.png)] bg-center rounded-3xl">
+                <div class="flex items-center justify-between">
+                    <div class="text-4xl">
+                        <h1 class="w-fit bg-[#FFFFF0] px-3 py-2 rounded-br-xl">Pertanian</h1>
+                        <h1 class="text-xl w-fit bg-[#FFFFF0] px-3 py-1 rounded-br-xl">01</h1>
+                    </div>
+                    <div
+                        class=" mr-4 text-2xl text-white h-12 w-12 bg-black rounded-full flex justify-center items-center">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[550px] bg-[url(/Perikanan.png)] bg-center rounded-3xl">
+                <div class="flex items-center justify-between">
+                    <div class="text-4xl">
+                        <h1 class="w-fit bg-[#FFFFF0] px-3 py-2 rounded-br-xl">Perikanan</h1>
+                        <h1 class="text-xl w-fit bg-[#FFFFF0] px-3 py-1 rounded-br-xl">02</h1>
+                    </div>
+                    <div
+                        class=" mr-4 text-2xl text-white h-12 w-12 bg-black rounded-full flex justify-center items-center">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[550px] bg-[url(/Peternakan.png)] bg-center rounded-3xl">
+                <div class="flex items-center justify-between">
+                    <div class="text-4xl">
+                        <h1 class="w-fit bg-[#FFFFF0] px-3 py-2 rounded-br-xl">Peternakan</h1>
+                        <h1 class="text-xl w-fit bg-[#FFFFF0] px-3 py-1 rounded-br-xl">03</h1>
+                    </div>
+                    <div
+                        class=" mr-4 text-2xl text-white h-12 w-12 bg-black rounded-full flex justify-center items-center">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mx-5 my-16 h-28 bg-[#80CC94] rounded-xl"></div>
 
 </body>
 
