@@ -15,10 +15,10 @@
 </head>
 
 <body class="bg-[#FFFFF0]">
-    <section id="Beranda" class="h-screen bg-[url(/background-hero.jpg)] bg-cover bg-center bg-fixed text-white">
+    <section id="Beranda" class="h-screen bg-[url(background-hero.jpg)] bg-cover bg-center bg-fixed text-white">
         <header class="flex justify-between items-center mx-12 lg:mx-20 pt-6">
             <div class="flex items-center gap-5">
-                <img src="/Logo-White.png" alt="" class="w-10 h-10">
+                <img src="Logo-White.png" alt="" class="w-10 h-10">
                 <h1>Virdi</h1>
             </div>
             <nav class="px-8 py-2 bg-gray-300 bg-opacity-30 rounded-3xl backdrop-blur hidden lg:block">
@@ -38,8 +38,9 @@
                 </ul>
             </nav>
             <div class="flex items-center gap-5">
-                <a href="" class="hidden lg:block">Sign in</a>
-                <a href=""
+                <a href="https://virion.virdi.id/beranda" target="_blank" rel="noopener noreferrer"
+                    class="hidden lg:block">Sign in</a>
+                <a href="https://virion.virdi.id/register" target="_blank" rel="noopener noreferrer"
                     class=" hidden px-4 py-1 bg-gray-300 bg-opacity-30 rounded-3xl backdrop-blur md:flex items-center">
                     Sign up
                     <div
@@ -70,7 +71,7 @@
         <div class="lg:mx-20 lg:flex items-center justify-between py-20 space-y-5">
             <div class="lg:text-xl text-lg">
                 <div class="flex items-center gap-3 mb-3 text-2xl">
-                    <img src="/pie-chart.png" alt="" class="h-[50px] w-[50px]">
+                    <img src="pie-chart.png" alt="" class="h-[50px] w-[50px]">
                     <h1 class="px-3 py-1 border-2 rounded-full border-[#507C5C]">Sektor Unggulan</h1>
                 </div>
                 <p>Virdi hadir sebagai mitra teknologi bagi <br> petani dan peternak di Indonesia, <br> untuk mendukung
@@ -85,7 +86,7 @@
                 berkelanjutan.</h1>
         </div>
         <div class="lg:mx-9 grid grid-cols-1 lg:grid-cols-3 gap-6 font-semibold">
-            <div class="h-[550px] bg-[url(/Pertanian.png)] bg-center bg-cover rounded-3xl">
+            <div class="h-[550px] bg-[url(Pertanian.png)] bg-center bg-cover rounded-3xl">
                 <div class="flex items-center justify-between">
                     <div class="text-4xl">
                         <h1 class="w-fit bg-[#FFFFF0] px-3 py-2 rounded-br-xl">Pertanian</h1>
@@ -97,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h-[550px] bg-[url(/Perikanan.png)] bg-center bg-cover rounded-3xl">
+            <div class="h-[550px] bg-[url(Perikanan.png)] bg-center bg-cover rounded-3xl">
                 <div class="flex items-center justify-between">
                     <div class="text-4xl">
                         <h1 class="w-fit bg-[#FFFFF0] px-3 py-2 rounded-br-xl">Perikanan</h1>
@@ -109,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="h-[550px] bg-[url(/Peternakan.png)] bg-center bg-cover rounded-3xl">
+            <div class="h-[550px] bg-[url(Peternakan.png)] bg-center bg-cover rounded-3xl">
                 <div class="flex items-center justify-between">
                     <div class="text-4xl">
                         <h1 class="w-fit bg-[#FFFFF0] px-3 py-2 rounded-br-xl">Peternakan</h1>
@@ -124,7 +125,20 @@
         </div>
     </section>
 
-    <div class="mx-5 my-16 h-28 bg-[#80CC94] rounded-xl"></div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper-kata mx-5 my-16 h-28 bg-[#80CC94] rounded-xl text-7xl font-semibold text-white">
+        <div class="swiper-wrapper" style="transition-timing-function: linear !important;">
+            <div class="h-28 w-max overflow-hidden swiper-slide">
+                <img src="kata.svg" alt="" class="h-full object-cover">
+            </div>
+            <div class="h-28 w-max overflow-hidden swiper-slide">
+                <img src="kata.svg" alt="" class="h-full object-cover">
+            </div>
+            <div class="h-28 w-max overflow-hidden swiper-slide">
+                <img src="kata.svg" alt="" class="h-full object-cover">
+            </div>
+        </div>
+    </div>
 
     <section id="Katalog" class="mx-8">
         <h1 class="lg:ml-10 mb-5 lg:text-5xl text-3xl">
@@ -136,7 +150,7 @@
                 <div class="swiper-slide w-fit">
                     <div class="min-h-[380px] max-h-[570px] min-w-[300px] max-w-[450px] rounded-2xl bg-gray-100">
                         <div class="p-5">
-                            <img src="/Humida.png" alt="" class="rounded-lg">
+                            <img src="Humida.webp" loading="lazy" alt="" class="rounded-lg">
                             <div class="my-4 lg:text-lg">
                                 <h1>Virdi-Humida</h1>
                                 <p class="text-xs lg:text-sm">Alat monitoring dan pengatur kelembaban udara berbasis
@@ -145,25 +159,28 @@
                                 </p>
                             </div>
                             <div class="flex items-center justify-between">
-                                <a href="#"
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://shopee.co.id/VIRDI-HUMIDA-%E2%80%93-Smart-Humidity-Controller-IoT-Alat-Pengontrol-Kelembaban-Udara-Cerdas-Berbasis-Internet-of-Things-i.1558922894.41676856455?extraParams=%7B%22display_model_id%22%3A350223478288%7D"
                                     class="px-4 py-1 mt-2 bg-[#FFFFF0] rounded-3xl inline-flex items-center mask-clip-padding">
-                                    Rp.213.000
+                                    Rp.299.000
                                     <div
                                         class="ml-3 text-[11px] text-white h-5 w-5 bg-[#80CC94] rounded-full flex justify-center items-center">
                                         <i class="bi bi-arrow-up-right"></i>
                                     </div>
                                 </a>
                                 <div class="flex items-center justify-between">
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-HUMIDA-%E2%80%93-Smart-Humidity-Controller-IoT-Alat-Pengontrol-Kelembaban-Udara-Cerdas-Berbasis-Internet-of-Things-i.1558922894.41676856455?extraParams=%7B%22display_model_id%22%3A350223478288%7D">
                                         <div
                                             class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
-                                            <img src="/tokopedia-logo.svg" alt="" class="size-6">
+                                            <img src="tokopedia-logo.svg" alt="" class="size-6">
                                         </div>
                                     </a>
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-HUMIDA-%E2%80%93-Smart-Humidity-Controller-IoT-Alat-Pengontrol-Kelembaban-Udara-Cerdas-Berbasis-Internet-of-Things-i.1558922894.41676856455?extraParams=%7B%22display_model_id%22%3A350223478288%7D">
                                         <div
                                             class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center">
-                                            <img src="/sh.svg" alt="" class="size-5">
+                                            <img src="sh.svg" alt="" class="size-5">
                                         </div>
                                     </a>
                                 </div>
@@ -174,34 +191,35 @@
                 <div class="swiper-slide w-fit">
                     <div class="min-h-[380px] max-h-[570px] min-w-[300px] max-w-[450px] rounded-2xl bg-gray-100">
                         <div class="p-5">
-                            <img src="/Tetas.png" alt="" class="rounded-lg">
+                            <img src="Tetas.webp" loading="lazy" alt="" class="rounded-lg">
                             <div class="my-4 lg:text-lg">
                                 <h1>Virdi-Tetas</h1>
-                                <p class="text-xs lg:text-sm">Alat monitoring dan pengatur kelembaban udara berbasis
-                                    Internet of
-                                    Things
-                                </p>
+                                <p class="text-xs lg:text-sm">Mesin penetas telur dengan backup daya dan pengecasan
+                                    otomatis</p>
                             </div>
                             <div class="flex items-center justify-between">
-                                <a href="#"
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://shopee.co.id/VIRDI-TETAS-%E2%80%93-Smart-Egg-Incubator-Alat-Penetas-Telur-Otomatis-dengan-Kontrol-Kecerahan-Lampu-Pintar-Pengatur-Suhu-Presisi-i.1558922894.45902315857?extraParams=%7B%22display_model_id%22%3A395222486312%7D"
                                     class="px-4 py-1 mt-2 bg-[#FFFFF0] rounded-3xl inline-flex items-center mask-clip-padding">
-                                    Rp.213.000
+                                    Rp.899.000
                                     <div
                                         class="ml-3 text-[11px] text-white h-5 w-5 bg-[#80CC94] rounded-full flex justify-center items-center">
                                         <i class="bi bi-arrow-up-right"></i>
                                     </div>
                                 </a>
                                 <div class="flex items-center justify-between">
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-TETAS-%E2%80%93-Smart-Egg-Incubator-Alat-Penetas-Telur-Otomatis-dengan-Kontrol-Kecerahan-Lampu-Pintar-Pengatur-Suhu-Presisi-i.1558922894.45902315857?extraParams=%7B%22display_model_id%22%3A395222486312%7D">
                                         <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
-                                            <img src="/tokopedia-logo.svg" alt="" class="size-5">
+                                            class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
+                                            <img src="tokopedia-logo.svg" alt="" class="size-6">
                                         </div>
                                     </a>
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-TETAS-%E2%80%93-Smart-Egg-Incubator-Alat-Penetas-Telur-Otomatis-dengan-Kontrol-Kecerahan-Lampu-Pintar-Pengatur-Suhu-Presisi-i.1558922894.45902315857?extraParams=%7B%22display_model_id%22%3A395222486312%7D">
                                         <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center">
-                                            <img src="/sh.svg" alt="" class="size-4">
+                                            class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center">
+                                            <img src="sh.svg" alt="" class="size-5">
                                         </div>
                                     </a>
                                 </div>
@@ -212,34 +230,36 @@
                 <div class="swiper-slide w-fit">
                     <div class="min-h-[380px] max-h-[570px] min-w-[300px] max-w-[450px] rounded-2xl bg-gray-100">
                         <div class="p-5">
-                            <img src="/Feed.png" alt="" class="rounded-lg">
+                            <img src="Feed.webp" loading="lazy" alt="" class="rounded-lg">
                             <div class="my-4 lg:text-lg">
                                 <h1>Virdi-Feed</h1>
-                                <p class="text-xs lg:text-sm">Alat monitoring dan pengatur kelembaban udara berbasis
+                                <p class="text-xs lg:text-sm">Alat pemberi pakan otomatis berbasis
                                     Internet of
-                                    Things
-                                </p>
+                                    Things dengan pengaturan jadwal dan porsi</p>
                             </div>
                             <div class=" flex items-center justify-between">
-                                <a href="#"
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://shopee.co.id/VIRDI-FEED-%E2%80%93-Smart-Fish-Feeder-IoT-Alat-Pemberi-Pakan-Ikan-Otomatis-Cerdas-Berbasis-Internet-of-Things-i.1558922894.52352282209?extraParams=%7B%22display_model_id%22%3A355221622292%7D"
                                     class="px-4 py-1 mt-2 bg-[#FFFFF0] rounded-3xl inline-flex items-center mask-clip-padding">
-                                    Rp.213.000
+                                    Rp.520.000
                                     <div
                                         class="ml-3 text-[11px] text-white h-5 w-5 bg-[#80CC94] rounded-full flex justify-center items-center">
                                         <i class="bi bi-arrow-up-right"></i>
                                     </div>
                                 </a>
                                 <div class="flex items-center justify-between">
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-FEED-%E2%80%93-Smart-Fish-Feeder-IoT-Alat-Pemberi-Pakan-Ikan-Otomatis-Cerdas-Berbasis-Internet-of-Things-i.1558922894.52352282209?extraParams=%7B%22display_model_id%22%3A355221622292%7D">
                                         <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
-                                            <img src="/tokopedia-logo.svg" alt="" class="size-5">
+                                            class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
+                                            <img src="tokopedia-logo.svg" alt="" class="size-6">
                                         </div>
                                     </a>
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-FEED-%E2%80%93-Smart-Fish-Feeder-IoT-Alat-Pemberi-Pakan-Ikan-Otomatis-Cerdas-Berbasis-Internet-of-Things-i.1558922894.52352282209?extraParams=%7B%22display_model_id%22%3A355221622292%7D">
                                         <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center">
-                                            <img src="/sh.svg" alt="" class="size-4">
+                                            class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center">
+                                            <img src="sh.svg" alt="" class="size-5">
                                         </div>
                                     </a>
                                 </div>
@@ -250,72 +270,35 @@
                 <div class="swiper-slide w-fit">
                     <div class="min-h-[380px] max-h-[570px] min-w-[300px] max-w-[450px] rounded-2xl bg-gray-100">
                         <div class="p-5">
-                            <img src="/Humida.png" alt="" class="rounded-lg">
+                            <img src="Humida.webp" loading="lazy" alt="" class="rounded-lg">
                             <div class="my-4 lg:text-lg">
-                                <h1>Virdi-Humida</h1>
-                                <p class="text-xs lg:text-sm">Alat monitoring dan pengatur kelembaban udara berbasis
-                                    Internet of
-                                    Things
-                                </p>
+                                <h1>Virdi-Siram</h1>
+                                <p class="text-xs lg:text-sm">Alat penyiram tanaman dan deteksi kelembapan tanah
+                                    berbasis Internet of Things </p>
                             </div>
                             <div class=" flex items-center justify-between">
-                                <a href="#"
+                                <a href="https://shopee.co.id/VIRDI-SIRAM-%E2%80%93-Smart-Garden-Farm-Irrigation-IoT-Alat-Penyiram-Otomatis-untuk-Tanaman-Kebun-Taman-Pertanian-Berbasis-Internet-Of-Things-i.1558922894.46102311691?extraParams=%7B%22display_model_id%22%3A244104652403%7D"
+                                    target="_blank" rel="noopener noreferrer"
                                     class="px-4 py-1 mt-2 bg-[#FFFFF0] rounded-3xl inline-flex items-center mask-clip-padding">
-                                    Rp.213.000
+                                    Rp.399.000
                                     <div
                                         class="ml-3 text-[11px] text-white h-5 w-5 bg-[#80CC94] rounded-full flex justify-center items-center">
                                         <i class="bi bi-arrow-up-right"></i>
                                     </div>
                                 </a>
                                 <div class="flex items-center justify-between">
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-SIRAM-%E2%80%93-Smart-Garden-Farm-Irrigation-IoT-Alat-Penyiram-Otomatis-untuk-Tanaman-Kebun-Taman-Pertanian-Berbasis-Internet-Of-Things-i.1558922894.46102311691?extraParams=%7B%22display_model_id%22%3A244104652403%7D">
                                         <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
-                                            <img src="/tokopedia-logo.svg" alt="" class="size-5">
+                                            class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
+                                            <img src="tokopedia-logo.svg" alt="" class="size-6">
                                         </div>
                                     </a>
-                                    <a href="">
+                                    <a target="_blank" rel="noopener noreferrer"
+                                        href="https://shopee.co.id/VIRDI-SIRAM-%E2%80%93-Smart-Garden-Farm-Irrigation-IoT-Alat-Penyiram-Otomatis-untuk-Tanaman-Kebun-Taman-Pertanian-Berbasis-Internet-Of-Things-i.1558922894.46102311691?extraParams=%7B%22display_model_id%22%3A244104652403%7D">
                                         <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center">
-                                            <img src="/sh.svg" alt="" class="size-4">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide w-fit">
-                    <div class="min-h-[380px] max-h-[570px] min-w-[300px] max-w-[450px] rounded-2xl bg-gray-100">
-                        <div class="p-5">
-                            <img src="/Humida.png" alt="" class="rounded-lg">
-                            <div class="my-4 lg:text-lg">
-                                <h1>Virdi-Humida</h1>
-                                <p class="text-xs lg:text-sm">Alat monitoring dan pengatur kelembaban udara berbasis
-                                    Internet of
-                                    Things
-                                </p>
-                            </div>
-                            <div class="flex items-center justify-between">
-                                <a href="#"
-                                    class="px-4 py-1 mt-2 bg-[#FFFFF0] rounded-3xl inline-flex items-center mask-clip-padding">
-                                    Rp.213.000
-                                    <div
-                                        class="ml-3 text-[11px] text-white h-5 w-5 bg-[#80CC94] rounded-full flex justify-center items-center">
-                                        <i class="bi bi-arrow-up-right"></i>
-                                    </div>
-                                </a>
-                                <div class="flex items-center justify-between">
-                                    <a href="">
-                                        <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center stroke-white">
-                                            <img src="/tokopedia-logo.svg" alt="" class="size-5">
-                                        </div>
-                                    </a>
-                                    <a href="">
-                                        <div
-                                            class="ml-3 h-7 w-7 bg-[#FFFFF0] rounded-full flex justify-center items-center">
-                                            <img src="/sh.svg" alt="" class="size-4">
+                                            class="ml-3 size-9 bg-[#FFFFF0] rounded-full flex justify-center items-center">
+                                            <img src="sh.svg" alt="" class="size-5">
                                         </div>
                                     </a>
                                 </div>
@@ -339,9 +322,9 @@
     </section>
 
     <section id="Footer"
-        class="mx-8 lg:mx-36 my-10 lg:p-16 p-10 bg-gray-100 rounded-3xl text-2xl flex flex-col space-y-10">
+        class="mx-8 lg:mx-20 my-10 lg:p-16 p-10 bg-gray-100 rounded-3xl text-2xl flex flex-col space-y-10">
         <div class="flex items-center gap-5 text-3xl">
-            <img src="/Logo.png" alt="" class="size-14">
+            <img src="Logo.png" alt="" class="size-14">
             <h1>Virdi</h1>
         </div>
         <div class="flex gap-44">
@@ -372,32 +355,32 @@
                 <div class="flex flex-wrap items-center mt-3 gap-3">
                     <a href="">
                         <div class="size-12 bg-gray-200 rounded-full flex justify-center items-center">
-                            <img src="/gmail.svg" alt="" class="size-7">
+                            <img src="gmail.svg" alt="" class="size-7">
                         </div>
                     </a>
                     <a href="">
                         <div class="size-12 bg-gray-200 rounded-full flex justify-center items-center">
-                            <img src="/wa.svg" alt="" class="size-7">
+                            <img src="wa.svg" alt="" class="size-7">
                         </div>
                     </a>
                     <a href="">
                         <div class="size-12 bg-gray-200 rounded-full flex justify-center items-center">
-                            <img src="/ig.svg" alt="" class="size-7">
+                            <img src="ig.svg" alt="" class="size-7">
                         </div>
                     </a>
                     <a href="">
                         <div class="size-12 bg-gray-200 rounded-full flex justify-center items-center">
-                            <img src="/yt.svg" alt="" class="size-7">
+                            <img src="yt.svg" alt="" class="size-7">
                         </div>
                     </a>
                     <a href="">
                         <div class="size-12 bg-gray-200 rounded-full flex justify-center items-center">
-                            <img src="/sh.svg" alt="" class="size-6">
+                            <img src="sh.svg" alt="" class="size-6">
                         </div>
                     </a>
                     <a href="">
                         <div class="size-12 bg-gray-200 rounded-full flex justify-center items-center">
-                            <img src="/tokopedia-logo.svg" alt="" class="size-7">
+                            <img src="tokopedia-logo.svg" alt="" class="size-7">
                         </div>
                     </a>
                 </div>
@@ -415,8 +398,8 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: "auto",
-            centeredSlides: true,
-            loop: true,
+            centeredSlides: false,
+            loop: false,
             spaceBetween: 30,
             navigation: {
                 nextEl: '.after-pagination',
@@ -429,9 +412,20 @@
                 },
                 640: { // sm: 640px ke atas
                     slidesPerView: "auto",
-                    centeredSlides: true,
+                    centeredSlides: false,
                 }
             }
+        });
+
+        var swiperM = new Swiper(".mySwiper-kata", {
+            centeredSlides: true,
+            slidesPerView: "auto",
+            autoplay: {
+                delay: 0,
+            },
+            speed: 8000,
+            loop: true,
+            freeMode: true,
         });
     </script>
 
